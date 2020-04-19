@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E085C673-A9C8-45E8-8F83-5777D92A4AFC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DesignPattern.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract.cs" />
+    <Compile Include="asyncWait\AsyncWait.cs" />
+    <Compile Include="DelegateAnonymous.cs" />
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\AbstractInterface\IComputerFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\AbstractProduct\IBrand.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\AbstractProduct\IProcessor.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\AbstractProduct\ISystemType.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\Client\EmployeeSystemFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\Client\EmployeeSystemManager.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ConcreateProduct\Dell.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ConcreateProduct\Desktop.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ConcreateProduct\I7.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ConcreateProduct\Laptop.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ConcreateProduct\Mac.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ContcreateFactory\DellDesktopFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ContcreateFactory\DellLaptopFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ContcreateFactory\MacDesktopFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\ContcreateFactory\MacLaptopFactory.cs" />
+    <Compile Include="FactoryDesign\AbstractFactory\Enumeration.cs" />
+    <Compile Include="FactoryDesign\ClientMain.cs" />
+    <Compile Include="FactoryDesign\EmployeeModel.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\BaseEmployeeFactory.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\ContractEmployeeFactory.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\ContractEmployeeManager.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\EmployeeManagerFactory.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\ParmanentEmployeeFactory.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\IEmployeeManager.cs" />
+    <Compile Include="FactoryDesign\FactoryMethod\ParmanentEmployeeManager.cs" />
+    <Compile Include="FactoryDesign\SimpleFactory\ContractEmployeeManager.cs" />
+    <Compile Include="FactoryDesign\SimpleFactory\EmployeeManagerFactory.cs" />
+    <Compile Include="FactoryDesign\SimpleFactory\ParmanentEmployeeManager.cs" />
+    <Compile Include="FactoryDesign\SimpleFactory\IEmployeeManager.cs" />
+    <Compile Include="FactoryMethod.cs" />
+    <Compile Include="OopsPractice\TestClasses.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestAssembly\TestAssembly.csproj">
+      <Project>{25D654B0-3B37-4BF4-B6F4-0DDAA6098F04}</Project>
+      <Name>TestAssembly</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

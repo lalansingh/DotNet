@@ -1,0 +1,8 @@
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csprojResolveAssemblyReference.cache
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\bin\Debug\DesignPattern.pdb
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\bin\Debug\TestAssembly.dll
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\bin\Debug\TestAssembly.pdb
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+E:\Rnd\HomePractice\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
